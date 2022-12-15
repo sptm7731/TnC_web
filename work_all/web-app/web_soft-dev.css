@@ -1,0 +1,247 @@
+
+
+/* https://web.imaginarycloud.com/#Services-section-landing */
+/* removing dark mode.............. */
+.dark-mode{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+header{
+    position: absolute;
+    top: 40px;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);  /* animation,video,image */
+    /* mix-blend-mode: multiply; */
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 2px 2px 2px rgba(35, 143, 220, 0.803); */
+    z-index: 9;
+}
+
+.bg_video{
+  /* margin-top: -80px; */
+  width: 100%;
+  z-index: -1;
+}
+
+.list{
+    background-color: #51c9e1;
+    display: flex;
+    align-items: center;
+    padding:  5px .5em;
+    position: absolute;
+    top: 90vh;
+    width: 100vw;
+    min-height: 20vh;
+    z-index: 11;
+    color: white;
+}
+
+.list h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.list h3{
+    padding: 5px;
+}
+
+.list img{
+    max-width: 80px;
+    padding: .5em;
+}
+
+._{
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+._ img{
+    width: 40px;
+}
+
+.list_project{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    align-items: center;
+    padding: 0 2em;
+}
+
+
+/* ....................produc*.......................... */
+#product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 4em;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    max-width: 45vw;
+
+}
+.product h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+.product p{
+    font-size: 18px;
+}
+
+.product img{
+    width: 30px;
+    padding-right: .5em;
+}
+
+.product div{
+    margin: 1em 0;
+} 
+
+.product h1{
+    display: flex;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/* ........................project..................................... */
+.project{
+    text-align: center;
+    font-size: 40px;
+    margin: 1em 0;
+    text-decoration: underline;
+}
+
+.web{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    height: 90vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 600px,auto;
+    border-bottom: 1px solid red;
+}
+
+.web h1{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 3em 0;
+}
+
+.web h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.web p{
+    max-width: 50vw;
+    margin: 1em 0;
+    font-size: 18px;
+}
+
+.application{
+    background-image: url(./image/EDF-mockup.png),linear-gradient(#bcf3fe,#51c9e1);
+}
+
+.marketplace{
+    background-image: url(./image/InvisibleHomes1@3x.png),linear-gradient(#bcf3fe,#51c9e1);
+}
+
+.mobile{
+    background-image: url(./image/Mucho-app1@3x.png),linear-gradient(#bcf3fe,#51c9e1);
+}
+
+.e-com{
+    background-image: url(./image/tep1@3x.png),linear-gradient(#bcf3fe,#51c9e1);
+}
+
+.more_project{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border: 2px solid red;
+}
+
+
+
+
+
+
+
+/* ........................................work process........................................ */
+.stack h1{
+    margin-top: 50px;
+    margin-left: 1em;
+    font-size: 30px;
+}
+
+.stack_item{
+    margin: .5em 2em;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(183, 221, 255, 0.600);
+}
+
+.stack_item img{
+    width: 50px;
+    height: 50px;
+    padding: .5em;
+    margin: .5em;
+}
+
+.stack_item h1{
+    font-size: 25px;
+    font-weight: 400;
+    min-width: 150px;
+    text-transform: uppercase;
+}
+
+/* ........................................wordpress........................................ */
+.wordpress{
+    display: flex;
+    background-color: #51c9e1;
+}
+
+@media screen and (max-width:768px) {
+    .wordpress{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    
+}
+
+.wordpress img{
+    width: 45vw;
+    height: 100%;
+}
+.wordpress span{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.wordpress div{
+    padding: 2em;
+}

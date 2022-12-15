@@ -1,0 +1,58 @@
+#no_jobs{
+    display: flex;
+    margin: 52px 3em 1em 3em;
+}
+
+#no_jobs img{
+    width: 55vw;
+}
+
+.text{
+    align-self: center;
+}
+
+#no_jobs p, h1{
+    margin: 0 0 .5em 0;
+}
+
+
+
+
+#request{
+    display: flex;
+    margin: 3em 0;
+}
+
+#request img{
+    width: 100em;
+    margin: 0 1em 0 0;
+}
+
+#request h2{
+    display: flex;   
+    flex-wrap: wrap;
+    font-size: 6vh;
+    color: rgb(66, 117, 255);
+    margin: 0 0 .5em 1em;
+}
+
+#request iframe{
+    margin-left: -.7em;
+}
+
+
+
+
+@media screen and (max-width: 998px) {
+    #no_jobs img{
+        width: 55%;
+    } 
+}
+
+@media screen and (max-width: 767px) {
+    html{
+        font-size: 45%;
+    }
+}
+
+
