@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../icon/logo_shortcut.png" type="image/x-icon">
+  <!-- <link href="css/foundation.css" rel="stylesheet" type="text/css" /> -->
+  <link href="../../offline_CDN/twentytwenty-no-compass.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../../main.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--or-->
+  <link rel="stylesheet" href="../../offline_CDN/aos.css">
+  <link rel="stylesheet" href="./ps.css">
+  <title>T&C_Work</title>
+</head>
+  <body>
+    <nav id="nav">
+
+      <div id="side_nav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="../home.html">Home</a>
+          <div class="dropdown-btn">Services 
+              <img class="drop" src="../icon/drop_down.png" alt="">
+          </div>
+            <div class="dropdown-container">
+              <a href="#portrait">Portrait Photo Editing</a>
+              <a href="#restoration">Photo Restoration</a>
+              <a href="#newborn">Newborn Photo Editing</a>
+              <a href="#weeding">Weeding photo</a>
+              <a href="#product">Product Photo Editing</a>
+              <a href="#jewellery">Jewellery</a>
+              <a href="#real_estate">Real Estate</a>
+              <a href="#path">Clipping Path</a>
+            </div>
+
+          <a href="#">Hire us</a>
+          <a href="../jobs/jobs.html">Get a job</a>
+          <a data-modal-target="#modal" href="#">Offers</a>
+          
+          <div class="dropdown-btn">Other Services 
+            <img class="drop" src="../icon/drop_down.png" alt="">
+        </div>
+          <div class="dropdown-container">
+            <a href="../../home.html#web" target="_blank">Web Development</a>
+            <a href="../../home.html#software" target="_blank">Software Development</a>
+            <a href="../../home.html#gfx" target="_blank">Graphics Design</a>
+            <a href="../../home.html#photo" target="_blank">Photo Editing & Retouching</a>
+            <a href="../../home.html#motion" target="_blank">Animation 2D/3D</a>
+            <a href="../../home.html#video" target="_blank">Video/Podcast Editing</a>
+            <a href="../../home.html#advertisement" target="_blank">Advertisement</a>
+            <a href="../../home.html#" target="_blank">Social Media Management</a>
+            <a href="../../home.html#" target="_blank">Writing</a>
+          </div>
+          <a href="#bottom">Contact us</a>
+        </div>
+        <span class="nav_line" onclick="openNav()">&#9776;</span>
+<!--.....................................................................................................................-->
+      <ul>
+          <li><img class="nav_logo" src="../icon/T&C Logo_small_white.png" alt="" title="Team & Core"></li>
+          <li><a href="../home.html">Home</a></li>
+              <li class="dropdown-btn dropdown_phone">Services 
+                  <img class="drop" src="../icon/drop_down.png" alt="">
+              </li>
+          <div class="dropdown-container_pc">
+
+                  <div class="bar">
+                    <a href="#portrait">Portrait Photo Editing</a>
+                    <a href="#restoration">Photo Restoration</a>
+                    <a href="#newborn">Newborn Photo Editing</a>
+                    <a href="#weeding">Weeding photo</a>
+                    <a href="#product">Product Photo Editing</a>
+                    <a href="#jewellery">Jewellery</a>
+                    <a href="#real_estate">Real Estate</a>
+                    <a href="#path">Clipping Path</a>
+              </div>
+          </div>
+          
+          <li><a href="#">Hire us</a></li>
+          <li><a href="../../jobs/jobs.html" target="_blank">Get a job</a></li>
+          <li><a data-modal-target="#modal" href="#">Offers</a></li>
+          
+          <li class="dropdown-btn dropdown_phone">Other Services 
+            <img class="drop" src="../icon/drop_down.png" alt="">
+        </li>
+    <div class="dropdown-container_pc">
+
+            <div class="bar">
+            <a href="../../home.html#web" target="_blank">Web Development</a>
+            <a href="../../home.html#software" target="_blank">Software Development</a>
+            <a href="../../home.html#gfx" target="_blank">Graphics Design</a>
+            <a href="../../home.html#photo" target="_blank">Photo Editing & Retouching</a>
+            <a href="../../home.html#motion" target="_blank">Animation 2D/3D</a>
+            <a href="../../home.html#video" target="_blank">Video/Podcast Editing</a>
+            <a href="../../home.html#advertisement" target="_blank">Advertisement</a>
+            <a href="../../home.html#" target="_blank">Social Media Management</a>
+            <a href="../../home.html#" target="_blank">Writing</a>
+        </div>
+    </div>
+    <li><a href="#bottom">Contact us</a></li>
+          <div class="search"><img class="nav_logo" src="../icon/search.png" alt=""><span class="line_search"></span><input type="text" placeholder=" Search..."></div>
+      </ul>
+  </nav><a class="order" href="#"><button >Order Now</button></a>
+
+
+
+<!--...........offer......-->
+
+
+<div class="modal" id="modal">
+  <div class="modal-header">
+    <div class="title">Offers</div>
+    <button data-close-button class="close-button">&times;</button>
+  </div>
+  <div class="modal-body">
+    <h4><strong>50% OFF</strong> in your first order</h4>
+    <div class="off_btn">
+      <a href="#"><button>Order Now</button></a>
+      <a href="#"><button>Fiverr</button></a>
+      <a href="#"><button>Upwork</button></a>
+      <a href="#"><button>Freelancer.com</button></a>
+  </div>
+  <div class="link">
+  <a href="#"><img src="../icon/facebook.png" alt="" style="border-radius: 4px;"></a>
+  <a href="#"><img src="../icon/whatsappalt.png" alt=""></a></div>
+  </div>
+</div>
+<div id="overlay"></div>
+  
+<!-- Swiper -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="./image/01.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./image/02.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./image/01.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./image/01.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./image/02.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./image/01.jpg" alt=""></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+<div class="card">
+<div>
+  <img src="./image/1-service-in-photo-editing-industry.svg" alt="">
+  <p>#1 service in photo editing industry</p>
+</div>
+
+<div>
+  <img src="./image/we-guarantee-the-complete-safety.svg" alt="">
+  <p>We guarantee 100% security</p>
+</div>
+
+<div>
+  <img src="./image/24-hours.svg" alt="">
+  <p>Fast 24 hour turnaround</p>
+</div>
+</div>
+
+<h1>Photo Editing Services We Provide</h1>  
+
+    <div class="compar" style="margin-bottom: 2em;">
+
+      <div class="slide" id="portrait">
+        <div class="twentytwenty-container">
+          <img src="./image/img_1-.jpg" />
+          <img src="./image/img_2-orginal.jpg" />
+        </div>
+
+        <div class="details">
+          <h4>Portrait Photo Editing</h4>
+          <p><strong>Only $6 per photo.</strong> We will make portrait photos look good and professionally edited.
+            Our retouchers will enhance body shapes and skin texture, remove all unwanted imperfections making your models look realistically edited. 
+      <br><br>
+            Portrait photo editing services included:
+            <ul>
+            <li>Color adjustment</li>
+            <li>Skin smoothing</li>
+            <li>Blemishes and stray hair removal</li>
+            <li>Make-up correction</li>
+          </ul>
+          </p>
+      </div> 
+      </div>
+
+      <div class="slide" id="restoration">
+        <div class="twentytwenty-container">
+          <img src="./image/img_1-.jpg" />
+          <img src="./image/img_2-orginal.jpg" />
+        </div>
+
+        <div class="details">
+          <h4>Restoration</h4>
+          <p><strong>Only $6 per photo.</strong> We will make portrait photos look good and professionally edited.
+            Our retouchers will enhance body shapes and skin texture, remove all unwanted imperfections making your models look realistically edited. 
+      <br><br>
+      Restoration services included:
+            <ul>
+            <li>Color adjustment</li>
+            <li>Skin smoothing</li>
+            <li>Blemishes and stray hair removal</li>
+            <li>Make-up correction</li>
+          </ul>
+          </p>
+      </div> 
+      </div>
+
+      <div class="slide" id="newborn">
+        <div class="twentytwenty-container">
+          <img src="./image/img_1-.jpg" />
+          <img src="./image/img_2-orginal.jpg" />
+        </div>
+
+        <div class="details">
+          <h4>Newborn Photo Editing</h4>
+          <p><strong>Only $6 per photo.</strong> We will make portrait photos look good and professionally edited.
+            Our retouchers will enhance body shapes and skin texture, remove all unwanted imperfections making your models look realistically edited. 
+      <br><br>
+      Newborn photo editing services included:
+            <ul>
+            <li>Color adjustment</li>
+            <li>Skin smoothing</li>
+            <li>Blemishes and stray hair removal</li>
+            <li>Make-up correction</li>
+          </ul>
+          </p>
+      </div> 
+      </div>
+
+      <div class="slide" id="weeding">
+        <div class="twentytwenty-container">
+          <img src="./image/img_1-.jpg" />
+          <img src="./image/img_2-orginal.jpg" />
+        </div>
+        <div class="details">
+          <h4>Weeding photo</h4>
+          <p><strong>Only $6 per photo.</strong> We will make portrait photos look good and professionally edited.
+            Our retouchers will enhance body shapes and skin texture, remove all unwanted imperfections making your models look realistically edited. 
+      <br><br>
+      Weeding photo editing services included:
+            <ul>
+            <li>Color adjustment</li>
+            <li>Skin smoothing</li>
+            <li>Blemishes and stray hair removal</li>
+            <li>Make-up correction</li>
+          </ul>
+          </p>
+      </div> 
+
+      </div>
+
+      <div class="slide" id="product">
+        <div class="twentytwenty-container">
+          <img src="./image/img_1-.jpg" />
+          <img src="./image/img_2-orginal.jpg" />
+        </div>
+        <div class="details">
+          <h4>Product photo</h4>
+          <p><strong>Only $6 per photo.</strong> We will make portrait photos look good and professionally edited.
+            Our retouchers will enhance body shapes and skin texture, remove all unwanted imperfections making your models look realistically edited. 
+      <br><br>
+      Product photo editing services included:
+            <ul>
+            <li>Color adjustment</li>
+            <li>Skin smoothing</li>
+            <li>Blemishes and stray hair removal</li>
+            <li>Make-up correction</li>
+          </ul>
+          </p>
+      </div> 
+
+      </div>
+
+
+      <div class="slide" id="jewellery">
+        <div class="twentytwenty-container">
+          <img src="./image/img_1-.jpg" />
+          <img src="./image/img_2-orginal.jpg" />
+        </div>
+        <div class="details">
+          <h4>Jewellery</h4>
+          <p><strong>Only $6 per photo.</strong> We will make portrait photos look good and professionally edited.
+            Our retouchers will enhance body shapes and skin texture, remove all unwanted imperfections making your models look realistically edited. 
+      <br><br>
+      Product photo editing services included:
+            <ul>
+            <li>Color adjustment</li>
+            <li>Skin smoothing</li>
+            <li>Blemishes and stray hair removal</li>
+            <li>Make-up correction</li>
+          </ul>
+          </p>
+      </div> 
+
+      </div>
+
+
+      <div class="slide" id="real_estate">
+        <div class="twentytwenty-container">
+          <img src="./image/img_1-.jpg" />
+          <img src="./image/img_2-orginal.jpg" />
+        </div>
+        <div class="details">
+          <h4>Real Estate</h4>
+          <p><strong>Only $6 per photo.</strong> We will make portrait photos look good and professionally edited.
+            Our retouchers will enhance body shapes and skin texture, remove all unwanted imperfections making your models look realistically edited. 
+      <br><br>
+      Product photo editing services included:
+            <ul>
+            <li>Color adjustment</li>
+            <li>Skin smoothing</li>
+            <li>Blemishes and stray hair removal</li>
+            <li>Make-up correction</li>
+          </ul>
+          </p>
+      </div> 
+
+      </div>
+
+
+      <div class="slide" id="path">
+        <div class="twentytwenty-container">
+          <img src="./image/img_1-.jpg" />
+          <img src="./image/img_2-orginal.jpg" />
+        </div>
+        <div class="details">
+          <h4>Clipping Path</h4>
+          <p><strong>Only $6 per photo.</strong> We will make portrait photos look good and professionally edited.
+            Our retouchers will enhance body shapes and skin texture, remove all unwanted imperfections making your models look realistically edited. 
+      <br><br>
+      Clipping Path services included:
+            <ul>
+            <li>Color adjustment</li>
+            <li>Skin smoothing</li>
+            <li>Blemishes and stray hair removal</li>
+            <li>Make-up correction</li>
+          </ul>
+          </p>
+      </div> 
+
+      </div> 
+      
+    </div>
+
+
+<!-- ..........about..... -->
+
+<div class="t-c_photo">
+<h1>ABOUT TEAM & CORE PHOTO EDITING SERVICE</h1>
+<p>Team & Core has been in business since 2003. Earlier we specialized in portrait photo editing in Photoshop and GIMP and offered only basic image retouching services. Today we provide the widest range of professional online retouching services of the highest level. Our retouchers make any kind of Photoshop work for all photography genres and of any level of complexity.
+
+  Our mission is to offer fast, affordable, secure, and high-quality photo retouching help for beginning and professional photographers who can’t or don’t have time to do image editing on their own.
+  
+  At Team & Core we understand that many photographers are just starting out, so we provide specialized photo editing services for everyone. We are constantly developing and trying to make your work easier. You take photos, we edit.</p>
+</div>
+<!-- ...........extra images -->
+
+<div class="why">
+  <h1>WHY CHOOSE OUR SERVICE?</h1>
+  <div>
+  <ul>
+    <li><strong>Highly Effective:</strong> Working with us is as easy as 1,2,3. Just upload a test image, ask for our price quote and we will get back to you quickly. Upon agreeing to our price and services terms, you can enjoy your day and we will forward the post processed images within 24 hours. Hassle free transaction and less work for you.</li>
+    
+    <li><strong>Highly Effective:</strong> Working with us is as easy as 1,2,3. Just upload a test image, ask for our price quote and we will get back to you quickly. Upon agreeing to our price and services terms, you can enjoy your day and we will forward the post processed images within 24 hours. Hassle free transaction and less work for you.</li>
+
+    <li><strong>Highly Effective:</strong> Working with us is as easy as 1,2,3. Just upload a test image, ask for our price quote and we will get back to you quickly. Upon agreeing to our price and services terms, you can enjoy your day and we will forward the post processed images within 24 hours. Hassle free transaction and less work for you.</li>
+
+    <li><strong>Highly Effective:</strong> Working with us is as easy as 1,2,3. Just upload a test image, ask for our price quote and we will get back to you quickly. Upon agreeing to our price and services terms, you can enjoy your day and we will forward the post processed images within 24 hours. Hassle free transaction and less work for you.</li>
+  </ul>
+  <img src="./image/can.jpg" alt="">
+</div>
+</div>
+<div class="extra">
+  <img src="./image/01.jpg" alt="">
+  <img src="./image/01.jpg" alt="">
+  <img src="./image/01.jpg" alt="">
+  <img src="./image/01.jpg" alt="">
+  <img src="./image/01.jpg" alt="">
+  <img src="./image/01.jpg" alt="">
+  <img src="./image/01.jpg" alt="">
+  <img src="./image/01.jpg" alt="">
+  <img src="./image/01.jpg" alt="">
+</div>
+
+    <!-- .......................script......................... -->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="../../offline_CDN/jquery.event.move.js"></script>
+    <script src="../../offline_CDN/jquery.twentytwenty.js"></script>
+
+
+<script src="../../main.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="./ps.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--or-->
+<script src="../../offline_CDN/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
+
+<!--.................................................bottom_section.................-->
+
+<footer id="bottom">
+  <div id="contact">
+      <h2>Contact us</h2>
+      <i><img src="../icon/phone.png" alt=""><span>+88xxxxxxxxxxx</span></i>
+      <i><img src="../icon/whatsappalt.png" alt=""><span>+88xxxxxxxxxxx</span></i>
+      <i><img src="../icon/telegram.png" alt=""><span>+88xxxxxxxxxxx</span></i>
+      <i><img src="../icon/mail.png" alt=""><span>teamandcore@gmail.com</span></i>
+  </div>
+
+  <div id="follow">
+      <h2>Follow us</h2>
+      <a href="#"><img src="../icon/facebook.png" alt="" style="border-radius: 4px;"><span>Facebook</span></a>
+      <a href="#"><img src="../icon/instagram.png" alt=""><span>Instagram</span></a>
+      <a href="#"><img src="../icon/linkedin-rect.png" alt=""><span>Link In</span></a>
+      <a href="#"><img src="../icon/behance.png" alt=""><span>Behance</span></a>
+  </div>
+
+  <div id="visit">
+      <h2>Visit us</h2>
+      <a href="#"><img src="../icon/fiverr.png" alt=""><span>Fiverr</span></a>
+      <a href="#"><img src="../icon/upwork.png" alt=""><span>Upwork</span></a>
+      <a href="#"><img src="../icon/freelancer.com.png" alt=""><span>Freelancer.com</span></a>
+  </div>
+</footer>
+  </body>
+</html>

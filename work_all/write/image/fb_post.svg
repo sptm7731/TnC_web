@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.49 84.54">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #51c9e1;
+        stroke-width: 1.5px;
+      }
+
+      .cls-1, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #dae8ef;
+        stroke-linejoin: round;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <g id="facebook_posts" data-name="facebook posts">
+    <g>
+      <line class="cls-3" x1="9.56" y1="62.23" x2="37.39" y2="62.23"/>
+      <line class="cls-3" x1="9.56" y1="51.22" x2="48.4" y2="51.22"/>
+      <path class="cls-1" d="M.75,7.8H.75V83.79H50.43c3.1,0,5.6-2.51,5.6-5.61V7.21c0-3.57,2.89-6.46,6.46-6.46H7.8C3.91,.75,.75,3.91,.75,7.8Z"/>
+      <path class="cls-2" d="M33.33,23.09h-1.83c-1.44,0-1.71,.7-1.71,1.72v2.26h3.43l-.46,3.54h-2.97v9.08h-3.58v-9.08h-2.98v-3.54h2.98v-2.61c0-3.03,1.81-4.68,4.46-4.68,1.26,0,2.35,.1,2.67,.14v3.16h0Z"/>
+    </g>
+  </g>
+</svg>

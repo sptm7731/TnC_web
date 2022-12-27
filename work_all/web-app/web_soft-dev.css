@@ -2,15 +2,15 @@
 
 /* https://web.imaginarycloud.com/#Services-section-landing */
 /* removing dark mode.............. */
-.dark-mode{
+/* .dark-mode{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-}
+} */
 
 
 header{
-    position: absolute;
-    top: 40px;
+    /* position: absolute; */
+    top: 0px;
     width: 100vw;
     height: 90vh;
     display: flex;
@@ -23,13 +23,17 @@ header{
     font-weight: 700;
     color: rgb(255, 255, 255);
     /* text-shadow: 2px 2px 2px rgba(35, 143, 220, 0.803); */
-    z-index: 9;
+    z-index: 3;
 }
 
 .bg_video{
+    position: absolute;
+    top: 40px;
   /* margin-top: -80px; */
   width: 100%;
-  z-index: -1;
+  height: 90vh;
+  object-fit: cover;
+  z-index: -10;
 }
 
 .list{
@@ -37,17 +41,18 @@ header{
     display: flex;
     align-items: center;
     padding:  5px .5em;
-    position: absolute;
-    top: 90vh;
+    /* position: absolute; */
+    margin-top: -5vw;
     width: 100vw;
-    min-height: 20vh;
-    z-index: 11;
+    /* min-height: 20vh; */
+    z-index: 4;
     color: white;
 }
 
 .list h1{
     font-size: 40px;
     font-weight: 400;
+    margin:  .5em 0;
 }
 
 .list h3{
@@ -69,9 +74,11 @@ header{
 
 ._ img{
     width: 40px;
+    mix-blend-mode: difference;
 }
 
 .list_project{
+    width: 300px;
     display: flex;
     flex-direction: column;
     max-width: 300px;
@@ -79,6 +86,15 @@ header{
     padding: 0 2em;
 }
 
+
+@media screen and (max-width:768px) {
+    .list h1,._{
+        font-size: 130%;
+    }
+    .list img{
+        max-width: 60px;
+    }   
+}
 
 /* ....................produc*.......................... */
 #product{
@@ -92,7 +108,7 @@ header{
     display: flex;
     flex-direction: column;
     margin: 2em;
-    max-width: 45vw;
+    width: 45vw;
 
 }
 .product h3{
@@ -139,6 +155,26 @@ header{
     border-bottom: 1px solid red;
 }
 
+@media screen and (max-width:950px) {
+    .web{
+        background-size: 500px,auto;
+    } 
+    
+    .product{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .web{
+        background-position: top right;
+        background-size: 400px,auto;
+    }
+    .dark-mode .web p{
+        color: black;
+    }  
+}
+
 .web h1{
     font-size: 20px;
     font-weight: 400;
@@ -157,19 +193,19 @@ header{
 }
 
 .application{
-    background-image: url(./image/EDF-mockup.png),linear-gradient(#bcf3fe,#51c9e1);
+    background-image: url(./image/EDF-mockup.png),linear-gradient(45deg,rgba(0, 149, 255, 0.1),#51c9e1);
 }
 
 .marketplace{
-    background-image: url(./image/InvisibleHomes1@3x.png),linear-gradient(#bcf3fe,#51c9e1);
+    background-image: url(./image/InvisibleHomes1@3x.png),linear-gradient(45deg,rgba(0, 149, 255, 0.1),#51c9e1);
 }
 
 .mobile{
-    background-image: url(./image/Mucho-app1@3x.png),linear-gradient(#bcf3fe,#51c9e1);
+    background-image: url(./image/Mucho-app1@3x.png),linear-gradient(45deg,rgba(0, 149, 255, 0.1),#51c9e1);
 }
 
 .e-com{
-    background-image: url(./image/tep1@3x.png),linear-gradient(#bcf3fe,#51c9e1);
+    background-image: url(./image/tep1@3x.png),linear-gradient(45deg,rgba(0, 149, 255, 0.1),#51c9e1);
 }
 
 .more_project{
@@ -219,6 +255,20 @@ header{
     text-transform: uppercase;
 }
 
+@media screen and (max-width:768px) {
+    .stack h1{
+        font-size: 25px;
+    }
+    .stack_item h1{
+        font-size: 20px;
+        min-width: 100px;
+    }
+    .stack_item img{
+        width: 40px;
+        height: 40px;
+    }   
+}
+
 /* ........................................wordpress........................................ */
 .wordpress{
     display: flex;
@@ -241,6 +291,10 @@ header{
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-decoration: underline;
+}
+
+.dark-mode .wordpress span{
+    color: black;
 }
 .wordpress div{
     padding: 2em;
