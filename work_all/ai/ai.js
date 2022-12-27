@@ -8,10 +8,4 @@ var mySwiper = new Swiper ('.swiper-container', {
           return '<span class="' + className + '">' + (menu[index]) + '</span>';
         },
     },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
   })

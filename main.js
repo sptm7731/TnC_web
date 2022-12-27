@@ -121,4 +121,11 @@ function DarkFunction(){
     modal.classList.remove('active')
     overlay.classList.remove('active')
   }
+
+  //............image slider.....
+
+$(window).load(function(){
+  $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.45});
+  $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+});
   

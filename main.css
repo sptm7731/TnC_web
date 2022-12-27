@@ -57,8 +57,15 @@ body{
 
 .dropdown-btn{
     color: white;
-    padding-left: 2em;
+    padding: 0 1em;
     cursor: pointer;
+}
+
+.active.dropdown-btn{
+    text-decoration: underline;
+}
+.active.dropdown-btn img{
+    rotate: 180deg;
 }
   
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
@@ -113,7 +120,10 @@ body{
 @media screen and (max-width: 950px){/*......................................responsive....................*/
     nav a, .dropdown_phone{
         display: none;
-    }   
+    }
+    .dropdown-btn{
+        margin-left: 1.3em;
+    }
 }
 
 @media screen and (min-width: 950px){/*.................max width not working.......F.............*/
@@ -172,6 +182,7 @@ body{
     margin: 5px 1em 5px 2em;
 }
 .drop{
+    height: 10px;
     width: 10px;
 }
 
