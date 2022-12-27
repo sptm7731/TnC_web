@@ -139,118 +139,123 @@
     <a data-aos="zoom-in" data-aos-duration="3000" href="./video_podcast_anim.html">OVERVIEW</a>
 </header>
 
-<div class="btn">
-    <a href="#video">VIDEO</a>
-    <a href="#audio">AUDIO</a>
-    <a href="#animation">ANIMATION</a>
-</div>
+<!-- ................................demo............................... -->
 
-<div id="snap">
-
+<div class="tabContainer">
+    <div class="buttonContainer">
+        <button onclick="showPanel(0,'#007aff')">VIDEO</button>
+        <button onclick="showPanel(1,'#007aff')">AUDIO</button>
+        <button onclick="showPanel(2,'#007aff')">ANIMATION</button>
+        <!-- <button onclick="showPanel(3,'#ff5722')">Tab 4</button> -->
+    </div>
+    <div class="tabPanel">
+        
 <!-- ........................video start................................. -->
-    <div id="video">
+<div id="video">
      
-  <div>
-    <video preload="none" class="video" loop controls>     
-        <source src="../web-app/image/web_bg.mp4">
-    </video>
-    <p>abc</p>
-    </div>
-  
     <div>
-        <video class="video" loop controls>
-            <source src="../web-app/image/web_bg.mp4">
-        </video>
-        <p>abc</p>
-        </div>
-  
-        <div>
-            <video class="video" loop controls>
-                <source src="../web-app/image/web_bg.mp4">
-            </video>
-            <p>abc</p>
-            </div>
-  
-            <div>
-                <video class="video" loop controls>
-                    <source src="../web-app/image/web_bg.mp4">
-                </video>
-                <p>abc</p>
-                </div>
-  
-                <div>
-                    <video class="video" loop controls>
-                        <source src="../web-app/image/web_bg.mp4">
-                    </video>
-                    <p>abc</p>
-                    </div>
-  
-                    <div>
-                        <video class="video" loop controls>
-                            <source src="../web-app/image/web_bg.mp4">
-                        </video>
-                        <p>abc</p>
-                        </div>
-  
-                        <div>
-                            <video class="video" loop controls>
-                                <source src="../web-app/image/web_bg.mp4">
-                            </video>
-                            <p>abc</p>
-                            </div>
-  
-                            <div>
-                                <video class="video" loop controls>
-                                    <source src="../web-app/image/web_bg.mp4">
-                                </video>
-                                <p>abc</p>
-                                </div>
+      <video preload="none" class="video" loop controls>     
+          <source src="../web-app/image/web_bg.mp4">
+      </video>
+      <p>abc</p>
+      </div>
+    
+      <div>
+          <video class="video" loop controls>
+              <source src="../web-app/image/web_bg.mp4">
+          </video>
+          <p>abc</p>
+          </div>
+    
+          <div>
+              <video class="video" loop controls>
+                  <source src="../web-app/image/web_bg.mp4">
+              </video>
+              <p>abc</p>
+              </div>
+    
+              <div>
+                  <video class="video" loop controls>
+                      <source src="../web-app/image/web_bg.mp4">
+                  </video>
+                  <p>abc</p>
+                  </div>
+    
+                  <div>
+                      <video class="video" loop controls>
+                          <source src="../web-app/image/web_bg.mp4">
+                      </video>
+                      <p>abc</p>
+                      </div>
+    
+                      <div>
+                          <video class="video" loop controls>
+                              <source src="../web-app/image/web_bg.mp4">
+                          </video>
+                          <p>abc</p>
+                          </div>
+    
+                          <div>
+                              <video class="video" loop controls>
+                                  <source src="../web-app/image/web_bg.mp4">
+                              </video>
+                              <p>abc</p>
+                              </div>
+    
+                              <div>
+                                  <video class="video" loop controls>
+                                      <source src="../web-app/image/web_bg.mp4">
+                                  </video>
+                                  <p>abc</p>
+                                  </div>
+      </div>
+
     </div>
+    <div class="tabPanel">
+
 
 <!-- .........................audio start.......................... -->
-    <div id="audio">
+<div id="audio">
         
+    <div class="audio_demo">
+      <div class="audio">
+        <audio class="audio" controls>
+            <source src="./">
+          </audio>
+          <h1>Before</h1>
+      </div>
+      
+      <div class="audio">
+        <audio class="audio" controls>
+            <source src="">
+          </audio>
+          <h1>After</h1>
+      </div>
+      </div>
+      
       <div class="audio_demo">
         <div class="audio">
-          <audio class="audio" controls>
-              <source src="./">
-            </audio>
-            <h1>After</h1>
+            <audio class="audio" controls>
+                <source src="">
+              </audio>
+              <h1>Before</h1>
         </div>
         
         <div class="audio">
-          <audio class="audio" controls>
-              <source src="">
-            </audio>
-            <h1>Before</h1>
+            <audio class="audio" controls>
+                <source src="">
+              </audio>
+              <h1>After</h1>
         </div>
         </div>
-        
-        <div class="audio_demo">
-          <div class="audio">
-              <audio class="audio" controls>
-                  <source src="">
-                </audio>
-                <h1>After</h1>
-          </div>
-          
-          <div class="audio">
-              <audio class="audio" controls>
-                  <source src="">
-                </audio>
-                <h1>Before</h1>
-          </div>
-          </div>
-    </div>
+  </div>
 
-<!-- .....................animation start............... -->
-    <div id="animation">
+
 
     </div>
-    <!-- .....................animation end............... -->
+    <!-- <div class="tabPanel">Tab 3:Content</div>
+    <div class="tabPanel">Tab 4:Content</div> -->
 </div>
-
-<!-- snap end -->
 
 
 
@@ -260,6 +265,7 @@
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+<script src="../work.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!--or-->
 <script src="../../offline_CDN/aos.js"></script>

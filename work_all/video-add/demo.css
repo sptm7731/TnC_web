@@ -52,48 +52,30 @@ header a:hover{
     text-decoration: underline;
 }
 
-.btn{
+.buttonContainer{
     display: flex;
     justify-content: center;
-    scroll-behavior: unset;
 }
 
-.btn a{
-    text-align: center;
-    text-decoration: none;
-    padding: 1em;
-    margin: 0 1em;
-    min-width: 150px;
-    background-color: rgba(0, 149, 255, 0.1);
-    border-radius:0 0 10px 10px;
-}
-
-.dark-mode .btn a{
-    color: white;
-}
-
-.btn a:active{
-    background-color: #007aff;
-}
-
-#snap{
-    width: 100vw;
-    overflow: hidden;
-    float: right;
-    display: flex; 
+.buttonContainer button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    text-shadow: none;
 }
 
 /* video */
 
 #video, #audio, #animation{
-    min-width: 102vw;
+    /* min-width: 102vw; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 1em;
     scroll-margin-top: 5em;
-    max-height: 100vh;
-    overflow-y: scroll;
+    /* max-height: 100vh;
+    overflow-y: scroll; */
     /* FIX THIS!!!
     scrollbar-width: none;
     -webkit-scrollbar-width: none; */
