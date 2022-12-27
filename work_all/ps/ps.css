@@ -1,3 +1,6 @@
+*{
+  scroll-behavior: smooth;
+}
 .swiper {
     width: 100%;
     height: 100%;
@@ -26,7 +29,7 @@
   .swiper-slide img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 90vh;
     object-fit: cover;
   }
 .swiper-button-prev,.swiper-button-next{
@@ -68,6 +71,16 @@ h1{
   text-align: center;
   margin: 2em 0;
 }
+
+@media screen and (max-width:768px){
+  .card div{
+    padding: 1em;
+  }
+  .card img{
+    width: 80px;
+  }
+  
+}
 /*...............photo..................................*/
 
 h4{
@@ -75,19 +88,95 @@ h4{
     font-weight: 500;
 }
 
-.slide p,.twentytwenty-container,.twentytwenty-container img{
-    width: 550px;
-    border-radius: 5px;
-    margin: 0;
+
+
+.compar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  cursor: default;
+}
+
+.slide,.twentytwenty-container{
+  width: 600px;
+  border-radius: 5px;
 }
 
 .slide{
-    display: flex;
-    padding: .5em 0;
-    margin: 1em;
-    justify-content: center;
+  padding: .5em 0;
+  margin: 1em;
 }
 
 .details{
-    margin: 0 1em;
+  margin: 2em 0;
+}
+
+.t-c_photo{
+  margin: 2em;
+}
+.t-c_photo h1,.why h1{
+  font-size: 30px;
+  font-weight: 400;
+  margin: .5em;
+}
+
+.why{
+  margin: 5em 1em;
+}
+
+.why li{
+  margin: 1em;
+}
+
+.why strong{
+  color: #007aff;
+}
+
+@media screen and (min-width:950px) {
+  .why li{
+    max-width: 50vw;
+  }
+}
+
+.why div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.why img{
+  height: 500px;
+}
+
+/* ...................extra................ */
+
+.extra{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1em 3em;
+
+}
+
+.extra img{
+  width: 200px;
+  margin: 5px;
+  object-fit: cover;
+}
+
+@media screen and (max-width:768px){
+
+  
+.slide,.twentytwenty-container{
+  width: 500px;
+  border-radius: 5px;
+}
+
+  .extra{
+    margin: .5em;
+  }
+
+  .extra img{
+    width: 150px;
+  }
+  
 }
