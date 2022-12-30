@@ -129,28 +129,3 @@ $(window).load(function(){
   $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
 });
   
-
-
-
-
-// ..............lazy load................//
-
-const targets = document.querySelectorAll("img");
-
-const lazyLoad = (target)=>{
-  const io = new IntersectionObserver((entries,observer)=>{
-      entries.forEach(entry=>{
-          if(entry.isIntersecting){
-              const img=entry.target;
-              const src=img.getAttribute("data-src");
-
-              img.setAttribute("src",src);
-              // img.classList.add("fade");
-              observer.disconnect();
-          }
-      })
-  },{threshold:[0.2]});
-
-  io.observe(target);
-}
-targets.forEach(lazyLoad);

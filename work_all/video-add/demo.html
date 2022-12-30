@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../icon/logo_shortcut.png" type="image/x-icon">
     <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="../work.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -126,8 +127,8 @@
         <a href="#"><button>Freelancer.com</button></a>
     </div>
     <div class="link">
-    <a href="#"><img data-src="../icon/facebook.png" alt="" style="border-radius: 4px;"></a>
-    <a href="#"><img data-src="../icon/whatsappalt.png" alt=""></a></div>
+    <a href="#"><img src="../icon/facebook.png" alt="" style="border-radius: 4px;"></a>
+    <a href="#"><img src="../icon/whatsappalt.png" alt=""></a></div>
     </div>
   </div>
   <div id="overlay"></div>
@@ -141,15 +142,11 @@
 
 <!-- ................................demo............................... -->
 
-<div class="tabContainer">
-    <div class="buttonContainer">
-        <button onclick="showPanel(0,'#007aff')">VIDEO</button>
-        <button onclick="showPanel(1,'#007aff')">AUDIO</button>
-        <button onclick="showPanel(2,'#007aff')">ANIMATION</button>
-        <!-- <button onclick="showPanel(3,'#ff5722')">Tab 4</button> -->
-    </div>
-    <div class="tabPanel">
-        
+<div class="mytabs">
+    <input type="radio" id="t1" name="mytabs" checked="checked">
+    <label for="t1">VIDEO</label>
+    <div class="tab">
+    
 <!-- ........................video start................................. -->
 <div id="video">
      
@@ -209,11 +206,15 @@
                                   <p>abc</p>
                                   </div>
       </div>
-
     </div>
-    <div class="tabPanel">
 
 
+
+    <input type="radio" id="t2" name="mytabs">
+    <label for="t2">AUDIO</label>
+    <div class="tab">
+      
+        
 <!-- .........................audio start.......................... -->
 <div id="audio">
         
@@ -250,12 +251,31 @@
         </div>
   </div>
 
+    </div>
 
+    <input type="radio" id="t3" name="mytabs">
+    <label for="t3">ANIMATION</label>
+    <div class="tab">
+        
+        
 
     </div>
-    <!-- <div class="tabPanel">Tab 3:Content</div>
-    <div class="tabPanel">Tab 4:Content</div> -->
-</div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -279,25 +299,25 @@ AOS.init();
 <footer id="bottom">
     <div id="contact">
         <h2>Contact us</h2>
-        <i><img data-src="../icon/phone.png" alt=""><span>+88xxxxxxxxxxx</span></i>
-        <i><img data-src="../icon/whatsappalt.png" alt=""><span>+88xxxxxxxxxxx</span></i>
-        <i><img data-src="../icon/telegram.png" alt=""><span>+88xxxxxxxxxxx</span></i>
-        <i><img data-src="../icon/mail.png" alt=""><span>teamandcore@gmail.com</span></i>
+        <i><img src="../icon/phone.png" alt=""><span>+88xxxxxxxxxxx</span></i>
+        <i><img src="../icon/whatsappalt.png" alt=""><span>+88xxxxxxxxxxx</span></i>
+        <i><img src="../icon/telegram.png" alt=""><span>+88xxxxxxxxxxx</span></i>
+        <i><img src="../icon/mail.png" alt=""><span>teamandcore@gmail.com</span></i>
     </div>
 
     <div id="follow">
         <h2>Follow us</h2>
-        <a href="#"><img data-src="../icon/facebook.png" alt="" style="border-radius: 4px;"><span>Facebook</span></a>
-        <a href="#"><img data-src="../icon/instagram.png" alt=""><span>Instagram</span></a>
-        <a href="#"><img data-src="../icon/linkedin-rect.png" alt=""><span>Link In</span></a>
-        <a href="#"><img data-src="../icon/behance.png" alt=""><span>Behance</span></a>
+        <a href="#"><img src="../icon/facebook.png" alt="" style="border-radius: 4px;"><span>Facebook</span></a>
+        <a href="#"><img src="../icon/instagram.png" alt=""><span>Instagram</span></a>
+        <a href="#"><img src="../icon/linkedin-rect.png" alt=""><span>Link In</span></a>
+        <a href="#"><img src="../icon/behance.png" alt=""><span>Behance</span></a>
     </div>
 
     <div id="visit">
         <h2>Visit us</h2>
-        <a href="#"><img data-src="../icon/fiverr.png" alt=""><span>Fiverr</span></a>
-        <a href="#"><img data-src="../icon/upwork.png" alt=""><span>Upwork</span></a>
-        <a href="#"><img data-src="../icon/freelancer.com.png" alt=""><span>Freelancer.com</span></a>
+        <a href="#"><img src="../icon/fiverr.png" alt=""><span>Fiverr</span></a>
+        <a href="#"><img src="../icon/upwork.png" alt=""><span>Upwork</span></a>
+        <a href="#"><img src="../icon/freelancer.com.png" alt=""><span>Freelancer.com</span></a>
     </div>
 </footer>
 

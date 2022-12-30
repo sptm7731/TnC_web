@@ -69,3 +69,43 @@
 #order a:active{
     background-color: #51c9e1;;
 }
+
+/* ..........................tab.................... */
+
+
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mytabs input[type="radio"]{
+    display: none;
+}
+
+.mytabs label {
+    padding: 10px;
+    background: var(--blue_lite);
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    min-width: 100px;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    order: 1;
+    display: none;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    align-items: center;
+    color: white;
+    background: var(--blue);
+    border-radius: 5px 5px 0px 0px; 
+}

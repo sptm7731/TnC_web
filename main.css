@@ -6,6 +6,13 @@
     padding: 0;
 }
 
+:root{
+    --red: #d80303dc;
+    --blue:#007aff;
+    --blue_lite: rgba(0, 149, 255, 0.1);
+
+}
+
 body{
     margin: 0;
     overflow-x: hidden;
