@@ -139,7 +139,7 @@ h3{
 .item p{
     padding: .6em;
     margin: 0;
-    font-size: 2.5vh;
+    font-size: 18px;
 }
 
 .item{
@@ -167,6 +167,16 @@ h3{
     padding-left: 1em;  
 }
 
+@media screen and (max-width:950px) {
+    .item{
+        grid-template-columns: 1fr;
+        justify-content: space-around;
+    }
+
+    .details{
+        border: none;
+    }
+}
 
 @media screen and (max-width: 768px){
     .dark-mode .about{
@@ -177,19 +187,14 @@ h3{
         margin: .5vh 4vh;
     }    
 
-    .item{
-        grid-template-columns: 1fr;
-        justify-content: space-around;
-    }
-
     .item img{
-        width: 45vw;
+        width: 200px;
+        height: 200px;
     }
 
     .item p{
-        font-size: 1.8vh;
-    }
-    
+        font-size: 14px;
+    }  
 }
 
 
