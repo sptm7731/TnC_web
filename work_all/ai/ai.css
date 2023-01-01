@@ -9,15 +9,18 @@ body{
 }
 
 header{
+    color: white;
     margin-top: 40px;
     width: 100vw;
-    height:40vh;
+    height:60vh;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
+    background-image:url(./image/cover\ for\ web\ wt1.png);
+    background-position: center;
+
 }
 
 
@@ -31,7 +34,7 @@ header{
     margin: 2em 0;
 }
 h1{
-    font-size: 32px;
+    font-size: 50px;
 }
 
 h5 img{
