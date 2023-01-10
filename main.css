@@ -4,11 +4,12 @@
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 :root{
     --red: #d80303dc;
-    --blue:#007aff;
+    --blue: #007aff;
     --blue_lite: rgba(0, 149, 255, 0.1);
 
 }
@@ -16,8 +17,18 @@
 body{
     margin: 0;
     overflow-x: hidden;
-    cursor: url("./icon/cursor_1.png"), default;
+    cursor: url("./icon/cursor_red.png"), default;
 }
+
+h1:hover,h2:hover,h3:hover,h4:hover,h5:hover,h6:hover,p:hover,span:hover,img:hover{
+    cursor: default;
+}
+
+
+button:hover, a:hover{
+    cursor: pointer;
+}
+
 
 
 /*.......................................scrollbar................................*/
@@ -39,7 +50,7 @@ body{
    
 /* Handle */
 ::-webkit-scrollbar-thumb{
-    background: #d80303dc; 
+    background: var(--red); 
     border-radius: 10px;
 }
   
@@ -102,6 +113,10 @@ body{
     position: absolute;
     top: 42px;
     left: 10em;
+}
+
+.secbar{
+    left: 31em;
 }
 
 .dropdown-container_pc a{
@@ -196,7 +211,7 @@ body{
 nav{
     height: 40px;
     color: white;
-    background-color: #d80303dc;
+    background-color: var(--red);
     font-size: 16px;
     font-weight: 700;
     display: flex;
@@ -268,7 +283,7 @@ li{
     height: 25px;
     width: 1px;
     margin: 0 5px;
-    background-color: #d80303dc;
+    background-color: var(--red);
 }
 
 .dark-mode .search .line_search{
@@ -282,7 +297,7 @@ li{
     border-radius: 30px;
     width: 5em;
     height: 2em;
-    background-image: linear-gradient(30deg,#A20E6B, #09AEAE);
+    background-image: linear-gradient(30deg, #117171, #09AEAE);
     position: absolute;
     top: 3px;
     right: 2vw;
@@ -292,7 +307,7 @@ li{
 }
 
 .dark-mode .order button{
-    background-image: linear-gradient(30deg,#E94560, #0F3460);
+    background-image: linear-gradient(30deg,#0e478c, #0F3460);
 }
 
 
@@ -306,7 +321,7 @@ li{
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
     border-radius: 10px;
-    z-index: 10;  
+    z-index: 13;  
     width: 500px;
     max-width: 80%;
     background: rgba(127, 127, 127, 0.500);
@@ -324,10 +339,14 @@ li{
   
   .modal-header {
     padding: 10px 15px;
-    color: #d80303dc;
+    color: var(--red);
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(14, 14, 14);
+  }
+
+  .dark-mode .modal-header{
+    color: white;
   }
   
   .modal-header .title {
@@ -362,7 +381,7 @@ li{
     padding: 8px 0;
     display:flex;
     flex-direction: row;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(15, 15, 25);
  
 }
 
@@ -384,6 +403,7 @@ li{
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.200);
     pointer-events: none;
+    z-index: 12;
   }
   
   #overlay.active {
@@ -403,24 +423,14 @@ li{
 
 /*...........................................common.............................................*/
 
-img:hover{
-    cursor: grab;
-}
-p, h1, h2, h3 :hover{
-    cursor: text;
-}
 p{
     font-weight: 400;
-    font-size: 2.1vh;
+    /* font-size: 2.1vh; */
     text-align: justify;
 }
 
 .dark-mode button{
     box-shadow: #0e0e18 2px 2px 4px;
-}
-
-button:hover{
-    cursor: pointer;
 }
 
 h1{
@@ -430,19 +440,18 @@ h1{
 }
 
 
-
 /*...............................bottom_section.............................*/
 
 #bottom{
     text-decoration: none;
     color: white;
-    background-color: #d80303dc;
+    background-color: var(--red);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: left;
     padding: 1em;
-    margin-bottom: 2em;
+    margin-bottom: .5em;
     justify-content: space-around;
 }
 
@@ -459,7 +468,6 @@ h1{
     flex-wrap: wrap;
     text-align: left;
     padding: 5px;
-   
 }
 
 #bottom h2{
@@ -489,7 +497,8 @@ h1{
     align-items: center;
     border-top: 1px solid;
     border-image: linear-gradient(to right,rgba(253, 253, 255, 0),rgba(253, 253, 255, 0),#d80303dc,rgba(188, 37, 37, 0),rgba(253, 253, 255, 0)) 1;
-    height: 40px;
+    /* height: 40px; */
+    padding: .5em;
 }
 
 .cp img{
@@ -497,12 +506,14 @@ h1{
     filter: drop-shadow(1px 1px 1px);
 }
 
-.cp p{
+.cp p, .cp a{
     font-size: 10px;
-    margin: 0;
-    padding: 0;
+    margin: 0 .5em;
 }
 
+.cp a{
+    padding: 5px 0;
+}
 
 button{
     text-shadow: rgba(0, 0, 0, 0.800) 1px 1px 1px;
@@ -515,7 +526,7 @@ a button{
     font-size: 16px;
     margin: 2em 5px ;
     color: white;
-    background-color: #d80303dc;
+    background-color: var(--red);
     border: none;
     border-radius: 10px;
     box-shadow: rgb(70, 0, 0) 2px 2px 4px;

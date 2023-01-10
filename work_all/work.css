@@ -7,7 +7,7 @@
 #order .card{
     padding: .5em 1em 1em 1.5em;
     box-shadow: 28px 28px 50px #0d275046;
-    min-width: 400px;
+    width: 400px;
 }
 
 #order img{
@@ -43,6 +43,11 @@
     box-shadow: 28px 28px 50px #00000046;
 }
 
+#order h1{
+    font-size: 30px;
+    margin-left: 0;
+}
+
 #order .card p{
     max-width: 400px;
     margin: 1em 0;
@@ -55,7 +60,7 @@
     padding: .3em 2em;
     margin: .5em 0;
     border-radius: 20px;
-    background-color: rgba(0, 149, 255, 0.1);
+    background-color: var(--blue_lite);
 }
 
 .dark-mode #order a{

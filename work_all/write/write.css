@@ -1,8 +1,7 @@
 header{
-    height: 50vh;
+    height: 360px;
     margin-top: 40px;
     padding: 1em;
-    text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -15,12 +14,14 @@ header{
 .dark-mode header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./image/bg.webp);
 }
+
 header h1{
     font-size: 50px;
     margin: .5em 0;
 }
 
 header h5{
+    text-transform: uppercase;
     color: #51c9e1;
     font-size: 30px;
     font-weight: 400;
@@ -37,12 +38,12 @@ header h5::after{
 
 @keyframes content_name {
     0%   {content: "facebook post";}
-    13% {content: "cv";}
-    25%  {content: "COPYWRITING";} 
-    50%   {content: "Ghostwriting";}
-    63% {content: "Blog Posts";}
-    75%  {content: "Press Releases";}
-    88%   {content: "Article Writing";}
+    14% {content: "cv";}
+    28%  {content: "COPYWRITING";} 
+    42%   {content: "Ghostwriting";}
+    56% {content: "Blog Posts";}
+    70%  {content: "Press Releases";}
+    84%   {content: "Article Writing";}
     100% {content: "Tweets";}
 }
 
@@ -52,7 +53,7 @@ header p{
 }
 
 header img{
-    width: 500px;
+    height: 500px;
 }
 
 @media screen and (max-width:768px) {
@@ -65,18 +66,15 @@ header img{
     }
 
     header img{
-        width: 300px;
+        height: 300px;
     }
 }
-
-
-
 
 
 /* .........................our services............................................... */
 
 .create{
-    margin: 2em 0;
+    margin: 100px 1em 1em 1em;
 }
 
 .create h1{
@@ -124,7 +122,7 @@ header img{
 }
 
 .grow_p{
-    /* width: 350px; */
+    width: 500px;
     margin: .5em 0;
 }
 
@@ -144,7 +142,7 @@ header img{
 }
 
 .grow_card .card{
-    width: 320px;
+    width: 400px;
     margin: 1em;
     padding: .5em;
     box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.08);
@@ -179,7 +177,7 @@ header img{
     }
 
     .grow p, .grow_card .card{
-        width: 650px;
+        width: 600px;
     }
 
     .grow_card img{

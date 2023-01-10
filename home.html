@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./icon/logo_shortcut.png" type="image/x-icon">
     <link rel="stylesheet" href="./main.css">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <!--or-->
     <link rel="stylesheet" href="./offline_CDN/aos.css">
     <link rel="stylesheet" href="./offline_CDN/twentytwenty-no-compass.css">
@@ -37,9 +37,21 @@
 
             <a href="#">Hire us</a>
             <a href="./jobs/jobs.html" target="_blank">Get a job</a>
-            <a data-modal-target="#modal" href="#">Offers</a>
+
+            <div class="dropdown-btn">Work sample 
+                <img class="drop" src="./icon/drop_down.png" alt="">
+            </div>
+              <div class="dropdown-container">
+                <a href="./work_all/web-app/web_soft-dev.html" target="_blank">Web & Software Development</a>
+                <a href="/work_all/ai/ai.html" target="_blank">Graphics Design</a>
+                <a href="./work_all/ps/ps-doc.html" target="_blank">Photo Editing & Retouching</a>
+                <a href="./work_all/video-add/video_podcast_anim.html" target="_blank">Video/Podcast Editing, Animation 2D/3D</a>
+                <!-- <a href="#advertisement">Advertisement</a>
+                <a href="#media_management">Social Media Management</a> -->
+                <a href="./work_all/write/write.html" target="_blank">Writing</a>
+              </div>
             <a href="#bottom">Contact us</a>
-            <a href="./work/work.html">Work sample</a>
+
           </div>
           <span class="nav_line" onclick="openNav()">&#9776;</span>
 <!--.....................................................................................................................-->
@@ -64,12 +76,24 @@
             
             <li><a href="#">Hire us</a></li>
             <li><a href="./jobs/jobs.html" target="_blank">Get a job</a></li>
-            <li><a data-modal-target="#modal" href="#">Offers</a></li>
-            <li><a href="#bottom">Contact us</a></li>
-            <li><a href="./work/work.html">Work sample</a></li>
-            <div class="search"><img class="nav_logo" src="./icon/search.png" alt=""><span class="line_search"></span><input type="text" placeholder=" Search..."></div>
+
+            <li class="dropdown-btn dropdown_phone">Work sample <img class="drop" src="./icon/drop_down.png" alt="">
+            </li>
+        <div class="dropdown-container_pc">
+                <div class="bar secbar">
+                    <a href="./work_all/web-app/web_soft-dev.html" target="_blank">Web & Software Development</a>
+                    <a href="./work_all/ai/ai.html" target="_blank">Graphics Design</a>
+                    <a href="./work_all/ps/ps-doc.html" target="_blank">Photo Editing & Retouching</a>
+                    <a href="./work_all/video-add/video_podcast_anim.html" target="_blank">Video/Podcast Editing, Animation 2D/3D</a>
+                    <!-- <a href="#advertisement">Advertisement</a>
+                    <a href="#media_management">Social Media Management</a> -->
+                    <a href="./work_all/write/write.html" target="_blank">Writing</a>
+            </div>
+        </div>
+        <li><a href="#bottom">Contact us</a></li>
+            <!-- <div class="search"><img class="nav_logo" src="./icon/search.png" alt=""><span class="line_search"></span><input type="text" placeholder=" Search..."></div> -->
         </ul>
-    </nav><a class="order" href="#"><button >Order Now</button></a>
+    </nav><a class="order" data-modal-target="#modal" href="#"><button >Offers</button></a>
 
 
 
@@ -84,7 +108,7 @@
     <div class="modal-body">
       <h4><strong>50% OFF</strong> in your first order</h4>
       <div class="off_btn">
-        <a href="#"><button>Order Now</button></a>
+
         <a href="#"><button>Fiverr</button></a>
         <a href="#"><button>Upwork</button></a>
         <a href="#"><button>Freelancer.com</button></a>
@@ -114,7 +138,7 @@
     <h3 data-aos="flip-up"
     data-aos-duration="3000">Your Creative Partner!</h3>
     <p data-aos="zoom-out-up"
-    data-aos-duration="2000">We at Team & Core provide you the best services to set up or promote your online businesses and platforms. Our various services include but aren't limited to Web Design,Advertisement, Social media management ,Photo editing, Video & Audio editing, Graphics design, Software development, Writing etc. If any services feel right for you then feel free to reach out to us and we will provide what you need with care and dilligence.</p>
+    data-aos-duration="2000">We at Team & Core provide you the best services to set up or promote your online businesses and platforms. Our various services include but aren't limited to Web Design,Advertisement, Social media management ,Photo editing, Video & Audio editing, Graphics design, Software development, Writing etc. If any services feel right for you then feel free to reach out to us and we will provide what you need with care and diligence.</p>
 </header>
 <!--header.........................................................-->
 
@@ -158,7 +182,7 @@
         <img src="./image/video.svg" alt="" loading="lazy">
         <div class="content">
         <h3>Video/Podcast</h3>
-        <p>One of our newest service helps you clean up your audio and video files. whether it is a video or a podcast audio, we can denoise the audio and clean up the look of your videos by upscaling the resolution and color grid. We can also master mix your audio and video content for youtube or any other social media platforms. Just provide us with the Audio/Video files and our team will get to work.</p>
+        <p>One of our newest service helps you clean up your audio and video files. whether it is a video or a podcast audio, we can denoise the audio and clean up the look of your videos by upscaleing the resolution and color grid. We can also master mix your audio and video content for youtube or any other social media platforms. Just provide us with the Audio/Video files and our team will get to work.</p>
         </div>
     </div>
     
@@ -189,28 +213,6 @@
 </div>
 
 
-<!--site-->
-<!--.....
-
-<div id="site">
-    <div class="card_site fi">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, asperiores.</p>
-        <a href="#">Visite</a>
-    </div>
-    <div class="card_site up">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, asperiores.</p>
-        <a href="#">Visite</a>
-    </div>
-    <div class="card_site ferr">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, asperiores.</p>
-        <a href="#">Visite</a>
-    </div>
-</div>
--->
-
-
-
-
 <!--.....................................details.........................................................-->
 
 <!--....section image animation CDN-->
@@ -235,7 +237,13 @@
         
         </div>
         <div>
-            <img src="./image/web_dev-16-9_Live.png" alt="" loading="lazy">
+            <img src="./image/web_dev-16-9_Live.webp" alt="" loading="lazy">
+        </div>
+        <div>
+            <a href="./work_all/web-app/web_soft-dev.html" target="_blank"><button>Explore Work</button></a>
+            <a href="https://www.fiverr.com/team_and_core?up_rollout=true" target="_blank"><button>Fiverr</button></a>
+            <a href="https://www.upwork.com/freelancers/~01335faafb93b07422" target="_blank"><button>Upwork</button></a>
+            <a href="https://www.freelancer.com/u/TeamAndCore" target="_blank"><button>Freelancer.com</button></a>
         </div>
     </div>
     
@@ -265,13 +273,6 @@
             <h5>Content Writing<span class="price">$10-$100*</span></h5>   
         </div>
     
-    </div>
-
-    <div>
-        <a href="#"><button>Order Now</button></a>
-        <a href="#"><button>Fiverr</button></a>
-        <a href="#"><button>Upwork</button></a>
-        <a href="#"><button>Freelancer.com</button></a>
     </div>
     
     </div>
@@ -322,7 +323,12 @@
                         </div>
                         </div>
         </div>
-        
+        <div>
+            <a href="./work_all/ai/ai.html" target="_blank"><button>Explore Work</button></a>
+            <a href="https://www.fiverr.com/team_and_core?up_rollout=true" target="_blank"><button>Fiverr</button></a>
+            <a href="https://www.upwork.com/freelancers/~01335faafb93b07422" target="_blank"><button>Upwork</button></a>
+            <a href="https://www.freelancer.com/u/TeamAndCore" target="_blank"><button>Freelancer.com</button></a>
+        </div>
     </div>
     
     <div class="section_demo">
@@ -348,49 +354,49 @@
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <img src="./image/slide templete.png" alt="" loading="lazy">
-            <h5>Presentation Design<span class="price">$5*</span></h5>   
+            <h5>Presentation Design<span class="price">$15-$50*</span></h5>   
         </div>
 
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <img src="./image/Packaging & Merch Design.jpg" alt="" loading="lazy">
-            <h5>Packaging & Merch Design<span class="price">$5*</span></h5>   
+            <h5>Merchandise Design<span class="price">$10-$50*</span></h5>   
         </div>
 
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <img src="./image/menu.jpg" alt="" loading="lazy">
-            <h5>Menu<span class="price">$5*</span></h5>   
+            <h5>Menu<span class="price">$20-$60*</span></h5>   
         </div>
 
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <img src="./image/branding.jpg" alt="" loading="lazy">
-            <h5>Branding<span class="price">$5*</span></h5>   
+            <h5>Branding<span class="price">$30-$100*</span></h5>   
         </div>
 
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <img src="./image/book.jpg" alt="" loading="lazy">
-            <h5>Book/Magazine Cover<span class="price">$5*</span></h5>   
+            <h5>Book/Magazine Cover<span class="price">$20-$80*</span></h5>   
         </div>
 
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <img src="./image/label_mockup.png" alt="" loading="lazy">
-            <h5>Label Designs<span class="price">$5*</span></h5>   
+            <h5>Packaging & Label Designs<span class="price">$5-$20*</span></h5>   
         </div>
     
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <img src="./image/Brochure.jpg" alt="" loading="lazy">
-            <h5>Brochure<span class="price">$5*</span></h5>   
+            <h5>Brochure<span class="price">$5-$15*</span></h5>   
         </div>
 
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <img src="./image/Bill board.jpg" alt="" loading="lazy">
-            <h5>Billboard<span class="price">$5*</span></h5>   
+            <h5>Billboard<span class="price">$50-$500*</span></h5>   
         </div>
     
         <div data-aos="zoom-out-up"
@@ -418,13 +424,6 @@
         </div>
     
     </div>
-
-    <div>
-        <a href="#"><button>Order Now</button></a>
-        <a href="#"><button>Fiverr</button></a>
-        <a href="#"><button>Upwork</button></a>
-        <a href="#"><button>Freelancer.com</button></a>
-    </div>
     
 </div>
 
@@ -433,7 +432,7 @@
 
 
 
-<!--..............softwere.........................................................-->
+<!--..............software.........................................................-->
 
 <div class="section" id="software">
     <div id="title_1" class="title">
@@ -452,6 +451,12 @@
         <div>
             <img src="./image/16-9_Live_Image-1.jpg" alt="" loading="lazy">
         </div>
+        <div>
+            <a href="./work_all/web-app/web_soft-dev.html" target="_blank"><button>Explore Work</button></a>
+            <a href="https://www.fiverr.com/team_and_core?up_rollout=true" target="_blank"><button>Fiverr</button></a>
+            <a href="https://www.upwork.com/freelancers/~01335faafb93b07422" target="_blank"><button>Upwork</button></a>
+            <a href="https://www.freelancer.com/u/TeamAndCore" target="_blank"><button>Freelancer.com</button></a>
+        </div>
     </div>
     
     <div class="section_demo">
@@ -460,28 +465,22 @@
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <img src="./image/ui_ux.jpg" alt="" loading="lazy">
-            <h5>UI/UX<span class="price">$5*</span></h5>   
+            <h5>UI/UX<span class="price">$75-$300*</span></h5>   
         </div>
     
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <img src="./image/custom app.jpg" alt="" loading="lazy">
-            <h5>Custom Software Development<span class="price">$5*</span></h5>   
+            <h5>Custom Software Development<span class="price">$150-$450*</span></h5>   
         </div>
     
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <img src="./image/mobile app.jpg" alt="" loading="lazy">
-            <h5>Mobile App Development<span class="price">$5*</span></h5>   
+            <h5>Mobile App Development<span class="price">$200-$500*</span></h5>   
         </div>   
     </div>
         
-    <div>
-        <a href="#"><button>Order Now</button></a>
-        <a href="#"><button>Fiverr</button></a>
-        <a href="#"><button>Upwork</button></a>
-        <a href="#"><button>Freelancer.com</button></a>
-    </div>
     
     </div>
 
@@ -499,7 +498,12 @@
             <h1>Photo Editing & Retouching</h1>
             <p>We are a team of skilled professionals specializing in enhancing and transforming digital images. From basic touch-ups to more complex edits, we can help bring your vision to life. With a focus on attention to detail and customer satisfaction, we work with individuals and businesses of all sizes to deliver high-quality results.</p>          
         </div> 
-     
+        <div>
+            <a href="./work_all/ps/ps-doc.html" target="_blank"><button>Explore Work</button></a>
+            <a href="https://www.fiverr.com/team_and_core?up_rollout=true" target="_blank"><button>Fiverr</button></a>
+            <a href="https://www.upwork.com/freelancers/~01335faafb93b07422" target="_blank"><button>Upwork</button></a>
+            <a href="https://www.freelancer.com/u/TeamAndCore" target="_blank"><button>Freelancer.com</button></a>
+        </div>
     </div>
 
 
@@ -507,33 +511,42 @@
         
         <div class="slide">
           <div class="twentytwenty-container">
-            <img src="./image/img_2-orginal.jpg" alt="" loading="lazy">
-            <img src="./image/img_1-.jpg" alt="" loading="lazy">
+            <img src="./image/High End Photo Retouching Service before.jpg" alt="">
+            <img src="./image/High End Photo Retouching Service after.jpg" alt="">
           </div>
+          <h5>High End Photo Retouching Service<span class="price">$5/Image</span></h5>
         </div>
 
         <div class="slide">
           <div class="twentytwenty-container">
-            <img src="./image/t&c old.jpg" alt="" loading="lazy">
-			<img src="./image/t&c restored.jpg" alt="" loading="lazy">
+            <img src="./image/t&c old.jpg" alt="">
+			<img src="./image/t&c restored.jpg" alt="">
           </div>
-          <h5>Restoration<span class="price">$25/Image*</span></h5>
+          <h5>Restoration<span class="price">$25/Image</span></h5>
         </div>
 
         <div class="slide">
             <div class="twentytwenty-container">
-              <img src="./image/750x500-new born before.jpg" alt="" loading="lazy">
-              <img src="./image/750x500-new born after.jpg" alt="" loading="lazy">
+              <img src="./image/750x500-new born before.jpg" alt="">
+              <img src="./image/750x500-new born after.jpg" alt="">
             </div>
-            <h5>Newborn<span class="price">$5.5/Image*</span></h5>
+            <h5>Newborn<span class="price">$5.5/Image</span></h5>
           </div>
 
         <div class="slide">
             <div class="twentytwenty-container">
-            <img src="./image/img_4-orginal.jpg" alt="" loading="lazy">
-			<img src="./image/img_3-.jpg" alt="" loading="lazy">
+            <img src="./image/Portrait Photo Editing before.jpg" alt="">
+			<img src="./image/Portrait Photo Editing after.jpg" alt="">
             </div>
-            <h5>Portrait Photo Editing<span class="price">$2.5/Image*</span></h5>
+            <h5>Portrait Photo Editing<span class="price">$2.5/Image</span></h5>
+          </div>
+
+          <div class="slide">
+            <div class="twentytwenty-container">
+            <img src="./image/clipp before.jpg" alt="">
+			<img src="./image/clipp after.jpg" alt="">
+            </div>
+            <h5>Clipping Path<span class="price">$2/Image</span></h5>
           </div>
 
       </div>
@@ -544,14 +557,8 @@
       
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
-        <img src="./image/" alt="" loading="lazy">
-            <h5>Wedding photo<span class="price">$0.50/Image*</span></h5>   
-        </div>
-
-        <div data-aos="zoom-out-up"
-        data-aos-duration="1500">
-        <img src="./image/retouch.jpg" alt="" loading="lazy">
-            <h5>High End Photo Retouching Service<span class="price">$5/Image*</span></h5>   
+        <img src="./image/WEDDING AFTER.jpg" alt="" loading="lazy">
+            <h5>Wedding photo<span class="price">$0.50/Image</span></h5>   
         </div>
 
         <div data-aos="zoom-out-up"
@@ -562,17 +569,13 @@
     
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
-        <img src="./image/clipping path.jpg" alt="" loading="lazy">
-            <h5>Clipping Path<span class="price">$5*</span></h5>   
+        <img src="./image/Jewelry after.jpg" alt="" loading="lazy">
+            <h5>Clipping Path<span class="price">$3/Image*</span></h5>   
         </div>
     
    
     
     </div>
-        <a href="#"><button>Order Now</button></a>
-        <a href="#"><button>Fiverr</button></a>
-        <a href="#"><button>Upwork</button></a>
-        <a href="#"><button>Freelancer.com</button></a>
     
 </div>
 
@@ -604,6 +607,12 @@
         </div>
         <div>
             <img src="./image/16-9_Live_Image-4.jpg" alt="" loading="lazy">
+        </div>
+        <div>
+            <a href="./work_all/video-add/video_podcast_anim.html" target="_blank"><button>Explore Work</button></a>
+            <a href="https://www.fiverr.com/team_and_core?up_rollout=true" target="_blank"><button>Fiverr</button></a>
+            <a href="https://www.upwork.com/freelancers/~01335faafb93b07422" target="_blank"><button>Upwork</button></a>
+            <a href="https://www.freelancer.com/u/TeamAndCore" target="_blank"><button>Freelancer.com</button></a>
         </div>
     </div>
     
@@ -643,7 +652,7 @@
             <img class="card__img" src="./image/3dr_mono.webp" loading="lazy">
             <!--.............. https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_chihiro.png ........-->
             <div class="card__text">
-              <p class="card__title">Spirited Away</p>
+              <p class="card__title">Lemo</p>
             </div>
           </div>
           <div class="card card__three">
@@ -651,16 +660,16 @@
             <img class="card__img" src="./image/3dr_monoo.png" loading="lazy">
             <!-- "https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_howlcastle.png" -->
             <div class="card__text">
-              <p class="card__title">Howl's Castle</p>
+              <p class="card__title">Howie Elbertson</p>
             </div>
           </div>
         </div>
         
         </div>
-    <!-- partial..............finisn -->
+    <!-- partial..............finis -->
 
 </div>
-      
+  <div class="move">⚠️Mouse move error</div>    
   
 <div class="section_demo">
       
@@ -668,29 +677,25 @@
     <div data-aos="zoom-out-up"
     data-aos-duration="1500">
     <img src="./image/Animated Logo.gif" alt="" loading="lazy">
-        <h5>Logo Animation<span class="price">$5*</span></h5>   
+        <h5>Logo Animation<span class="price">$15-$80*</span></h5>   
     </div>
 
     <div data-aos="zoom-out-up"
     data-aos-duration="1500">
-    <img src="./T&C_web_image/Rectangle 47.jpg" alt="" loading="lazy">
-        <h5>Custom Software Development<span class="price">$5*</span></h5>   
-    </div>
+    <iframe width="400" height="260" src="https://www.youtube.com/embed/qTOL-F02krg" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h5>Short Animated Cartoon<span class="price">$100-$220*</span></h5>
+</div>
 
-    <div data-aos="zoom-out-up"
-    data-aos-duration="1500">
-    <img src="./T&C_web_image/Rectangle 47.jpg" alt="" loading="lazy">
-        <h5>Mobile App Development<span class="price">$5*</span></h5>   
-    </div>
+<div>
+    <video width="400" height="260" controls>
+        <source src="./video/ad animation.mp4" type="video/mp4">
+    </video>
+    <h5>Promotional Animated Advertisement<span class="price">$150-$250*</span></h5>   
+</div>
 </div>
 
 
 </div>
-
-    <a href="#"><button>Order Now</button></a>
-    <a href="#"><button>Fiverr</button></a>
-    <a href="#"><button>Upwork</button></a>
-    <a href="#"><button>Freelancer.com</button></a>
 
 </div>
 
@@ -720,7 +725,12 @@
             <li>Vlogs</li>
         </ul>
         </div>
-    
+        <div>
+            <a href="./work_all/video-add/video_podcast_anim.html" target="_blank"><button>Explore Work</button></a>
+            <a href="https://www.fiverr.com/team_and_core?up_rollout=true" target="_blank"><button>Fiverr</button></a>
+            <a href="https://www.upwork.com/freelancers/~01335faafb93b07422" target="_blank"><button>Upwork</button></a>
+            <a href="https://www.freelancer.com/u/TeamAndCore" target="_blank"><button>Freelancer.com</button></a>
+        </div>
     </div>
     
     <div class="section_demo">
@@ -729,40 +739,33 @@
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <iframe width="400" height="260" src="https://www.youtube.com/embed/EylCkLXZavA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h5>Vlogs<span class="price">$5*</span></h5>   
+            <h5>Vlogs<span class="price">$20-$50*</span></h5>   
         </div>
     
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <iframe width="400" height="260" src="https://www.youtube.com/embed/h4VdBnNORIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h5>Documentaries<span class="price">$5*</span></h5>   
+            <h5>Documentaries<span class="price">$20-$50*</span></h5>   
         </div>
     
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <iframe width="400" height="260" src="https://www.youtube.com/embed/EnujbkuXsvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h5>Promotional ads<span class="price">$5*</span></h5>   
+            <h5>Promotional ads<span class="price">$45-$320*</span></h5>   
         </div>
         
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <iframe width="400" height="260" src="https://www.youtube.com/embed/KyODka4ZeXs?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h5>Podcast<span class="price">$5*</span></h5>   
+            <h5>Podcast<span class="price">$20-$40*</span></h5>   
         </div>
-    </div>
-        
-    <div>
-        <a href="#"><button>Order Now</button></a>
-        <a href="#"><button>Fiverr</button></a>
-        <a href="#"><button>Upwork</button></a>
-        <a href="#"><button>Freelancer.com</button></a>
     </div>
     
     </div>
 
 
 
-<!--..............advertiesment.........................................................-->
+<!--..............advertisement.........................................................-->
 
 <div class="section" id="advertisement">
     <div id="title_1" class="title">
@@ -780,41 +783,40 @@
         <div>
             <img src="./image/advertisement.jpg" alt="" loading="lazy">
         </div>
+        <div>
+            <a href="./work_all/video-add/video_podcast_anim.html" target="_blank"><button>Explore Work</button></a>
+            <a href="https://www.fiverr.com/team_and_core?up_rollout=true" target="_blank"><button>Fiverr</button></a>
+            <a href="https://www.upwork.com/freelancers/~01335faafb93b07422" target="_blank"><button>Upwork</button></a>
+            <a href="https://www.freelancer.com/u/TeamAndCore" target="_blank"><button>Freelancer.com</button></a>
+        </div>
     </div>
     
     <div class="section_demo">
 
         <div>
-            <video width="400" height="260" controls><source src="./video/promo ad.mp4" type="video/mp4"></video>
-            <h5>Promotional advertisement<span class="price">$5*</span></h5>   
+            <video width="400" height="260" controls><source src="./video/Cha Lounge Bd.mp4" type="video/mp4"></video>
+            <h5>Promotional advertisement<span class="price">$45-$320*</span></h5>   
         </div>
 
         <div>
             <video width="400" height="260" controls><source src="./video/promo ad.mp4" type="video/mp4"></video>
-            <h5>Promotional advertisement<span class="price">$5*</span></h5>   
+            <h5>Product advertisement<span class="price">$100-$220*</span></h5>   
         </div>
 
         <div>
             <video width="400" height="260" controls><source src="./video/" type="video/mp4"></video>
-            <h5>Promotional advertisement<span class="price">$5*</span></h5>   
+            <h5>Business advertisement<span class="price">$55-$180*</span></h5>   
         </div>
 
 
-    </div>
-
-    <div>
-        <a href="#"><button>Order Now</button></a>
-        <a href="#"><button>Fiverr</button></a>
-        <a href="#"><button>Upwork</button></a>
-        <a href="#"><button>Freelancer.com</button></a>
     </div>
 
 </div>
 
 
 
-<!--..............media managemant.........................................................-->
-
+<!--..............media management.........................................................-->
+<!-- 
 <div class="section" id="media_management">
     <div id="title_2" class="title">
         <div>
@@ -836,7 +838,12 @@
             <li>Vlogs</li>
         </ul>
         </div>
-    
+        <div>
+            <a href="#"><button>Explore Work</button></a>
+            <a href="https://www.fiverr.com/team_and_core?up_rollout=true" target="_blank"><button>Fiverr</button></a>
+            <a href="https://www.upwork.com/freelancers/~01335faafb93b07422" target="_blank"><button>Upwork</button></a>
+            <a href="https://www.freelancer.com/u/TeamAndCore" target="_blank"><button>Freelancer.com</button></a>
+        </div>
     </div>
     
     <div class="section_demo">
@@ -866,15 +873,8 @@
             <h5>Podcast<span class="price">$5*</span></h5>   
         </div>
     </div>
-        
-    <div>
-        <a href="#"><button>Order Now</button></a>
-        <a href="#"><button>Fiverr</button></a>
-        <a href="#"><button>Upwork</button></a>
-        <a href="#"><button>Freelancer.com</button></a>
-    </div>
     
-    </div>
+    </div> -->
 
 
 <!--..............writing.........................................................-->
@@ -893,6 +893,12 @@
         <div>
             <img src="./image/16-9_Live_Image-write.jpg" alt="" loading="lazy">
         </div>
+        <div>
+            <a href="./work_all/write/write.html"><button>Explore Work</button></a>
+            <a href="https://www.fiverr.com/team_and_core?up_rollout=true" target="_blank"><button>Fiverr</button></a>
+            <a href="https://www.upwork.com/freelancers/~01335faafb93b07422" target="_blank"><button>Upwork</button></a>
+            <a href="https://www.freelancer.com/u/TeamAndCore" target="_blank"><button>Freelancer.com</button></a>
+        </div>
     </div>
     
     <div class="section_demo">
@@ -901,33 +907,26 @@
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <img src="./image/cv.jpg" alt="" loading="lazy">
-            <h5>CV<span class="price">$5*</span></h5>   
+            <h5>Résumé/CV<span class="price">$10-$35*</span></h5>   
         </div>
     
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
-        <img src="./T&C_web_image/Rectangle 47.jpg" alt="" loading="lazy">
-            <h5>Copywriting<span class="price">$5*</span></h5>   
+        <img src="./image/copy.jpg" alt="" loading="lazy">
+            <h5>Copywriting<span class="price">$10/page</span></h5>   
         </div>
 
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
         <img src="./image/Ghostwriting.jpg" alt="" loading="lazy">
-            <h5>Ghostwriting<span class="price">$5*</span></h5>   
+            <h5>Ghostwriting<span class="price">$10-$50*</span></h5>   
         </div>
     
         <div data-aos="zoom-out-up"
         data-aos-duration="1500">
-        <img src="./T&C_web_image/Rectangle 47.jpg" alt="" loading="lazy">
-            <h5>Content Marketing<span class="price">$5*</span></h5>   
+        <img src="./image/content marketing.jpg" alt="" loading="lazy">
+            <h5>Content Marketing<span class="price">$10-$30*</span></h5>   
         </div>   
-    </div>
-        
-    <div>
-        <a href="#"><button>Order Now</button></a>
-        <a href="#"><button>Fiverr</button></a>
-        <a href="#"><button>Upwork</button></a>
-        <a href="#"><button>Freelancer.com</button></a>
     </div>
     
     </div>
@@ -946,28 +945,26 @@
         
         <section class="people">
             <div class="p1">
-                <img data-aos="fade-down" data-aos-duration="1000" src="./image/shanto.png" alt="">
-                <span>Md.R.I Shanto</span>
+                <img data-aos="fade-down" data-aos-duration="1000" src="./image/shanto.webp" alt="">
+                <span>Rakibul Shanto</span>
                 <p>Founder & CEO, Team&Core</p>
                 <ul>
                         <li>Owner "AL KURSI", YouTube</li>
                         <li>Professional photographer</li>
-                        <li>Designer at "Team&Core"</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Designer</li>
+                        
                     </ul>
             </div>
         
             <div class="p2">
-                <img data-aos="fade-down" data-aos-duration="2000" src="./image/muid.png" alt="">
+                <img data-aos="fade-down" data-aos-duration="2000" src="./image/muied.webp" alt="">
                 <span>Abdul Mueid</span>
                 <p>Co-Founder, Team&Core</p>
                 <ul>
                         <li>Owner "GOLPADHAR",YouTube</li>
-                        <li>Public Relations, Team&Core</li>
-                        <li>Professional Writter</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Public Relations</li>
+                        <li>Professional Writer</li>
+                      
                     </ul>
             </div>
         
@@ -979,8 +976,19 @@
                     <li>Technical Consultant</li>
                     <li>Lead Designer</li>
                     <li>Front-end developer</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
+                    
+                </ul>
+            </div>
+
+            <div class="p4">
+                <img data-aos="fade-down" data-aos-duration="1000" src="./image/rahul.webp" alt="">
+                <span>Ishiat Al Mahmood</span>
+                <p>Co-Founder, Team&Core</p>
+                <ul>
+                    <li>Technical Consultant</li>
+                    <li>AI Engineer</li>
+                    <li>Content Writer</li>
+                    
                 </ul>
             </div>
         
@@ -992,9 +1000,9 @@
 
 
 <!--..................script....................-->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
 <!--or-->
-<script src="./3.2.1_jquery.min.js"></script>
+<script src="./offline_CDN/2.1.3_jquery.min.js"></script>
 
 <script src="./offline_CDN/jquery.event.move.js"></script>
 <script src="./offline_CDN/jquery.twentytwenty.js"></script>
@@ -1002,7 +1010,7 @@
 <script src="./main.js"></script>
 <script src="./home.js"></script>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 <!--or-->
 <script src="./offline_CDN/aos.js"></script>
 <script>
@@ -1015,9 +1023,9 @@
 <footer id="bottom">
     <div id="contact">
         <h2>Contact us</h2>
-        <i><img src="./icon/phone.png" alt=""><span>+88xxxxxxxxxxx</span></i>
-        <i><img src="./icon/whatsappalt.png" alt=""><span>+88xxxxxxxxxxx</span></i>
-        <i><img src="./icon/telegram.png" alt=""><span>+88xxxxxxxxxxx</span></i>
+        <i><img src="./icon/phone.png" alt=""><span>+8801728093045</span></i>
+        <i><img src="./icon/whatsappalt.png" alt=""><span>+8801616028403</span></i>
+        <i><img src="./icon/telegram.png" alt=""><span>+8801616028403</span></i>
         <i><img src="./icon/mail.png" alt=""><span>teamandcore@gmail.com</span></i>
     </div>
 
@@ -1041,8 +1049,8 @@
     <div>
         <p>TEAM&CORE 2023</p>
     <p>All rights are reserved to Team&Core.Ltd</p>
-    </div>
-    
+    <a href="https://github.com/siMobin/TnC_web#your-creative-partner" target="_blank">Privacy policy.Terms of service</a>
+    </div>  
 </div>
 </body>
 </html>
